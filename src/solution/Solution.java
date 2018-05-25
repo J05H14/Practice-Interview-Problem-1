@@ -25,6 +25,9 @@ public class Solution {
 	 * damages = [1,2,3]
 	 * This should return true
 	 */
+	public static boolean recursiveSolution(int total_money, int total_damage, int[] costs, int[] damages) {
+		
+	}
 	public static boolean solution(int total_money, int total_damage, int[] costs, int[] damages) {
 		//don't want to change the value of money
 		int money = total_money;
