@@ -6,7 +6,7 @@ public class Solution {
 		// TODO Auto-generated method stub
 		int[] a = {2,3,1,1};
 		int[] b = {2,1,2,2};
-		System.out.println(solution(5,6,a,b));
+		System.out.println(recursiveSolution(5,6,a,b));
 	}
 	
 	/*
@@ -25,9 +25,22 @@ public class Solution {
 	 * damages = [1,2,3]
 	 * This should return true
 	 */
+	//solution using recurrsion, SHOULD work because it can backtrack
 	public static boolean recursiveSolution(int total_money, int total_damage, int[] costs, int[] damages) {
-		
+		//base case
+		if(total_damage <= 0) {
+			return true;
+		}
+		//recursive case
+		else {
+			for(int i = 0; i < costs.length; i++) {
+				if(costs[i] <= total_money) {
+					
+				}
+			}
+		}
 	}
+	//solution using for loop, doesn't work, cant backtrack
 	public static boolean solution(int total_money, int total_damage, int[] costs, int[] damages) {
 		//don't want to change the value of money
 		int money = total_money;
